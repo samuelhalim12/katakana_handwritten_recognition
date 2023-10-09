@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseLetterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="Pilih huruf untuk mulai menulis"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Silahkan mulai dari huruf A"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <Button
+                android:id="@+id/buttonChooseA"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="ア"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/buttonChooseKa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="カ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseA"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseA" />
+
+            <Button
+                android:id="@+id/buttonChooseSa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="サ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseKa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseKa" />
+
+            <Button
+                android:id="@+id/buttonChooseTa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="タ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseSa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseSa" />
+
+            <Button
+                android:id="@+id/buttonChooseNa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ナ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseTa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseTa" />
+
+            <Button
+                android:id="@+id/buttonChooseHa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ハ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseNa" />
+
+            <Button
+                android:id="@+id/buttonChooseMa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="マ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseHa" />
+
+            <Button
+                android:id="@+id/buttonChooseYa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ヤ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseMa" />
+
+            <Button
+                android:id="@+id/buttonChooseRa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ラ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseYa" />
+
+            <Button
+                android:id="@+id/buttonChooseN"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ン"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseWa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseWa" />
+
+            <Button
+                android:id="@+id/buttonChooseWa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ワ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseRa"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseRa" />
+
+            <Button
+                android:id="@+id/buttonChooseWo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ヲ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseRo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseRo" />
+
+            <Button
+                android:id="@+id/buttonChooseRi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="リ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseMi"
+                app:layout_constraintTop_toTopOf="@+id/buttonChooseRu" />
+
+            <Button
+                android:id="@+id/buttonChooseRu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ル"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseYu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseYu" />
+
+            <Button
+                android:id="@+id/buttonChooseRe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="レ"
+                app:cornerRadius="200sp"
+                app:layout_constraintEnd_toStartOf="@+id/buttonChooseRo"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseMe"
+                app:layout_constraintTop_toTopOf="@+id/buttonChooseRu" />
+
+            <Button
+                android:id="@+id/buttonChooseRo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ロ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseYo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseYo" />
+
+            <Button
+                android:id="@+id/buttonChooseYu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ユ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseMu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseMu" />
+
+            <Button
+                android:id="@+id/buttonChooseYo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ヨ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseMo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseMo" />
+
+            <Button
+                android:id="@+id/buttonChooseMi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ミ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseHi"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseHi" />
+
+            <Button
+                android:id="@+id/buttonChooseMu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ム"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseFu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseFu" />
+
+            <Button
+                android:id="@+id/buttonChooseMe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="メ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseHe"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseHe" />
+
+            <Button
+                android:id="@+id/buttonChooseMo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="モ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseHo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseHo" />
+
+            <Button
+                android:id="@+id/buttonChooseHi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ヒ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNi"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseNi" />
+
+            <Button
+                android:id="@+id/buttonChooseFu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="フ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseNu" />
+
+            <Button
+                android:id="@+id/buttonChooseHe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="へ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNe"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseNe" />
+
+            <Button
+                android:id="@+id/buttonChooseHo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ホ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseNo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseNo" />
+
+            <Button
+                android:id="@+id/buttonChooseNi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ニ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseChi"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseChi" />
+
+            <Button
+                android:id="@+id/buttonChooseNu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ヌ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseTsu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseTsu" />
+
+            <Button
+                android:id="@+id/buttonChooseNe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ネ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseTe"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseTe" />
+
+            <Button
+                android:id="@+id/buttonChooseNo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ノ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseTo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseTo" />
+
+            <Button
+                android:id="@+id/buttonChooseChi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="チ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseShi"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseShi" />
+
+            <Button
+                android:id="@+id/buttonChooseTsu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ツ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseSu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseSu" />
+
+            <Button
+                android:id="@+id/buttonChooseTe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="テ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseSe"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseSe" />
+
+            <Button
+                android:id="@+id/buttonChooseTo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ト"
+                app:cornerRadius="200sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonChooseSo"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseSo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseSo" />
+
+            <Button
+                android:id="@+id/buttonChooseShi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="シ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseKi"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseKi" />
+
+            <Button
+                android:id="@+id/buttonChooseSu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ス"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseKu"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseKu" />
+
+            <Button
+                android:id="@+id/buttonChooseSe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="セ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseKe"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseKe" />
+
+            <Button
+                android:id="@+id/buttonChooseSo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ソ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseKo"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseKo" />
+
+            <Button
+                android:id="@+id/buttonChooseKi"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="キ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseI"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseI" />
+
+            <Button
+                android:id="@+id/buttonChooseKu"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ク"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseU"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseU" />
+
+            <Button
+                android:id="@+id/buttonChooseKe"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ケ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseE"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseE" />
+
+            <Button
+                android:id="@+id/buttonChooseKo"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="コ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toStartOf="@+id/buttonChooseO"
+                app:layout_constraintTop_toBottomOf="@+id/buttonChooseO" />
+
+            <Button
+                android:id="@+id/buttonChooseI"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="イ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toEndOf="@+id/buttonChooseA"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/buttonChooseU"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="ウ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toEndOf="@+id/buttonChooseI"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/buttonChooseO"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="オ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toEndOf="@+id/buttonChooseE"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/buttonChooseE"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="エ"
+                app:cornerRadius="200sp"
+                app:layout_constraintStart_toEndOf="@+id/buttonChooseU"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

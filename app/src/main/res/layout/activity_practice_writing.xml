@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE6E6"
+    tools:context=".PracticeWritingActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Tulis huruf seperti contoh di  kotak putih"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewGifDataset2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.mihir.drawingcanvas.drawingView
+        android:id="@+id/drawViewDataset2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGifDataset2"></com.mihir.drawingcanvas.drawingView>
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="45dp"
+        app:icon="@drawable/baseline_document_scanner_24"
+        app:iconGravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawViewDataset2" />
+
+    <Button
+        android:id="@+id/buttonTrashDataset2"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_delete_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonCheck"
+        app:layout_constraintTop_toTopOf="@+id/buttonCheck" />
+
+    <Button
+        android:id="@+id/buttonUndoDataset2"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_undo_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonTrashDataset2"
+        app:layout_constraintTop_toTopOf="@+id/buttonTrashDataset2" />
+
+    <Button
+        android:id="@+id/buttonRedoDataset2"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_redo_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonUndoDataset2"
+        app:layout_constraintTop_toTopOf="@+id/buttonUndoDataset2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

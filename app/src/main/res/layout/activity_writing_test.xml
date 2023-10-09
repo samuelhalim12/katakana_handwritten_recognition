@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE6E6"
+    tools:context=".WritingTestActivity">
+
+    <Button
+        android:id="@+id/buttonCheckTest"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="8dp"
+        app:icon="@drawable/baseline_document_scanner_24"
+        app:iconGravity="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drawViewTest" />
+
+    <Button
+        android:id="@+id/buttonTrashTest"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_delete_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonCheckTest"
+        app:layout_constraintTop_toTopOf="@+id/buttonCheckTest" />
+
+    <Button
+        android:id="@+id/buttonUndoTest"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_undo_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonTrashTest"
+        app:layout_constraintTop_toTopOf="@+id/buttonTrashTest" />
+
+    <Button
+        android:id="@+id/buttonRedoTest"
+        android:layout_width="57dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        app:icon="@drawable/baseline_redo_24"
+        app:layout_constraintStart_toEndOf="@+id/buttonUndoTest"
+        app:layout_constraintTop_toTopOf="@+id/buttonUndoTest" />
+
+    <com.mihir.drawingcanvas.drawingView
+        android:id="@+id/drawViewTest"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion"></com.mihir.drawingcanvas.drawingView>
+
+    <ProgressBar
+        android:id="@+id/progressBarTest"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textQuestionNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/progressBarTest"
+        app:layout_constraintTop_toTopOf="@+id/progressBarTest" />
+
+    <TextView
+        android:id="@+id/textTotalQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="10"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/progressBarTest" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="/"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textQuestionNow"
+        app:layout_constraintTop_toTopOf="@+id/progressBarTest" />
+
+    <Button
+        android:id="@+id/buttonQuestion"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FD9898"
+        android:clickable="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Jawab soal di bawah dengan menulis huruf Katakana di kotak Putih"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarTest" />
+</androidx.constraintlayout.widget.ConstraintLayout>
